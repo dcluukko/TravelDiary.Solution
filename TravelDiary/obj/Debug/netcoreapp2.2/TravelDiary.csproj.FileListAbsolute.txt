@@ -25,3 +25,4 @@
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/New.g.cshtml.cs
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Show.g.cshtml.cs
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Edit.g.cshtml.cs
+/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Delete.g.cshtml.cs

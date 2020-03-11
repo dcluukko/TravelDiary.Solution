@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <title>Travel Diary</title>
 </head>
-<body>
+<body style="background-color: #ddd">
   <div class="container">
     <h1>Travel Diary</h1>
     <hr>
@@ -17,19 +17,36 @@
 
     @foreach (Place place in Model)
     {
-    <div class="card">
-
-    <h1>Location : @place.Name</h1>
-    <p>Date: @place.Date</p>
-    <p>Description: @place.Description</p>
-    <form action="/place/@place.Id/edit" method="get">
-      <button type="submit">Edit</button>
-    </form>
-    </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>@place.Name</h1>
+        </div>
+        <div class="card-body">
+          <p>Date: @place.Date</p>
+          <p>Description: @place.Description</p>
+          <div class="row">
+            <div class="col-md-6">
+              <form action="/place/@place.Id/edit" method="get">
+                <button class="btn btn-warning btn-lg btn-block" type="submit">Edit</button>
+              </form>
+            </div>
+            <div class="col-md-6">
+              <form action="/place/@place.Id/delete" method="post">
+                <button class="btn btn-danger btn-lg btn-block" type="submit" name="button">Delete</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     }
-
-    <a href="/place">View all entries.</a>
-    <a href="/place/new">Add a new entry.</a>
+    <div class="row" style="margin: 10em">
+      <div class="col-md-6">
+        <a href="/place"><button class="btn btn-lg btn-primary btn-block">View all entries.</button></a>
+      </div>
+      <div class="col-md-6">
+        <a href="/place/new"><button class="btn btn-lg btn-primary btn-block">Add a new entry.</button></a>
+      </div>
+    </div>
   </div>
 </body>
 </html>

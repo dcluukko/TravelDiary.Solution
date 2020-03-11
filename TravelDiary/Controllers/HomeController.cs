@@ -6,8 +6,6 @@ namespace TravelDiary.Controllers
 {
     public class HomeController : Controller
     {
-      public int idToEdit = 1;
-
       [HttpGet("/")]
       public ActionResult Home() { return View(); }
 
@@ -29,18 +27,17 @@ namespace TravelDiary.Controllers
       }
 
       [HttpPost("/place/{id}")]
-      public ActionResult Update(string description, string name, string date)
+      public ActionResult Update(int id, string description, string name, string date)
       {
-        Place.Find(idToEdit).Description = description;
-        Place.Find(idToEdit).Name = name;
-        Place.Find(idToEdit).Date = date;
+        Place.Find(id).Description = description;
+        Place.Find(id).Name = name;
+        Place.Find(id).Date = date;
         return RedirectToAction("Index");
       }
 
       [HttpGet("/place/{id}/edit")]
       public ActionResult Edit(int id)
       {
-        idToEdit = id;
         Place placeToEdit = Place.Find(id);
         return View(placeToEdit);
       }

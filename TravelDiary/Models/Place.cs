@@ -29,5 +29,7 @@ namespace TravelDiary.Models
     {
       return _newPlace[searchId-1];
     }
+
+    // public static 
   }
 }
