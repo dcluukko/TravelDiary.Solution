@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <form action="/place/@Model.Id" method="post">
-    <label for="name">Place Name</label>
-    <input id="name" name="name" type="text" value="@Model.Name">
-
-    <label for="date"> Date</label>
-    <input id="date" name ="date" type="text" value="@Model.Date">
-
-    <label for="description"> Description</label>
-    <input id="description" name ="description" type="text" value="@Model.Description">
-    <button type="submit">Go</button> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
+  <div class="card">
+    <div class="card-header">
+      <h1>@Model.Name</h1>
+    </div>
+    <form action="/place/@Model.Id" method="post">
+    <div class="row"> 
+      <div class="col-md-3">
+        <label for="name">Place Name</label>
+        <input id="name" name="name" type="text" value="@Model.Name">
+      </div>
+      <div class="col-md-3">
+        <label for="date"> Date</label>
+        <input id="date" name ="date" type="text" value="@Model.Date">
+      </div>
+      <div class="col-md-6">
+        <label for="description"> Description</label>
+        @* <input id="description" name ="description" type="text" value="@Model.Description"> *@
+        <textarea id="description" value="@Model.Description" name ="description" rows="4" cols="50">@Model.Description</textarea>
+      </div>
+      <button class="btn btn-success btn-lg edit-button" type="submit">Go</button> 
+    </div>
   </form>
+  </div>
 </html>

@@ -2984,11 +2984,6 @@
       "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Shared/Show.cshtml",
       "TargetPath": "Views\\Shared\\Show.cshtml",
       "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Shared/Delete.cshtml",
-      "TargetPath": "Views\\Shared\\Delete.cshtml",
-      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
