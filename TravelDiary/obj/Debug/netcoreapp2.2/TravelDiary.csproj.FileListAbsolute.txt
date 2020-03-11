@@ -15,12 +15,13 @@
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.TagHelpers.output.cache
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.RazorCoreGenerate.cache
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Home/Home.g.cshtml.cs
-/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Places/Index.g.cshtml.cs
-/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Places/New.g.cshtml.cs
-/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Places/Show.g.cshtml.cs
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.RazorTargetAssemblyInfo.cache
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.RazorTargetAssemblyInfo.cs
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.Views.pdb
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.dll
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.pdb
 /Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/TravelDiary.csproj.CopyComplete
+/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Index.g.cshtml.cs
+/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/New.g.cshtml.cs
+/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Show.g.cshtml.cs
+/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/obj/Debug/netcoreapp2.2/Razor/Views/Shared/Edit.g.cshtml.cs

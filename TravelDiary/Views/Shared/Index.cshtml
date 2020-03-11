@@ -1,3 +1,5 @@
+@using TravelDiary.Models;
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +14,19 @@
     <h1>Travel Diary</h1>
     <hr>
     <p>Use this to keep track of all of your travel experiences!</p>
+
+    @foreach (Place place in Model)
+    {
+    <div class="card">
+
+    <h1>Location : @place.Name</h1>
+    <p>Date: @place.Date</p>
+    <p>Description: @place.Description</p>
+    <form action="/place/@place.Id/edit" method="get">
+      <button type="submit">Edit</button>
+    </form>
+    </div>
+    }
 
     <a href="/place">View all entries.</a>
     <a href="/place/new">Add a new entry.</a>

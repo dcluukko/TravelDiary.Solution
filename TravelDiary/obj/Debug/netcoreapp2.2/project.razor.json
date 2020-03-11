@@ -2961,23 +2961,28 @@
   "RootNamespace": "TravelDiary",
   "Documents": [
     {
+      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Shared/Edit.cshtml",
+      "TargetPath": "Views\\Shared\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Home/Home.cshtml",
       "TargetPath": "Views\\Home\\Home.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Places/New.cshtml",
-      "TargetPath": "Views\\Places\\New.cshtml",
+      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Shared/New.cshtml",
+      "TargetPath": "Views\\Shared\\New.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Places/Index.cshtml",
-      "TargetPath": "Views\\Places\\Index.cshtml",
+      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Shared/Index.cshtml",
+      "TargetPath": "Views\\Shared\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Places/Show.cshtml",
-      "TargetPath": "Views\\Places\\Show.cshtml",
+      "FilePath": "/Users/Guest/Desktop/TravelDiary.Solutions/TravelDiary/Views/Shared/Show.cshtml",
+      "TargetPath": "Views\\Shared\\Show.cshtml",
       "FileKind": "mvc"
     }
   ],
