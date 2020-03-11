@@ -7,13 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   <title>Travel Diary</title>
 </head>
-<body style="background-color: #ddd">
+<body>
   <div class="container">
-    <h1>Travel Diary</h1>
-    <hr>
-    <p>Use this to keep track of all of your travel experiences!</p>
+    <div id="header">
+      <h1>Travel Diary</h1>
+      <p>Use this to keep track of all of your travel experiences!</p>
+      <hr>
+      <div class="row" id="nav">
+        <div class="col-md-6">
+          <a href="/place"><button class="btn btn-lg btn-primary btn-block">View all entries.</button></a>
+        </div>
+        <div class="col-md-6">
+          <a href="/place/new"><button class="btn btn-lg btn-primary btn-block">Add a new entry.</button></a>
+        </div>
+      </div>
+    </div>
 
     @foreach (Place place in Model)
     {
@@ -39,14 +50,7 @@
         </div>
       </div>
     }
-    <div class="row" style="margin: 10em">
-      <div class="col-md-6">
-        <a href="/place"><button class="btn btn-lg btn-primary btn-block">View all entries.</button></a>
-      </div>
-      <div class="col-md-6">
-        <a href="/place/new"><button class="btn btn-lg btn-primary btn-block">Add a new entry.</button></a>
-      </div>
-    </div>
+    
   </div>
 </body>
 </html>

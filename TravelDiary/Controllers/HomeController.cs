@@ -41,5 +41,12 @@ namespace TravelDiary.Controllers
         Place placeToEdit = Place.Find(id);
         return View(placeToEdit);
       }
+
+      [HttpPost("/place/{id}/delete")]
+      public ActionResult Delete(int id)
+      {
+        Place.Delete(id);
+        return RedirectToAction("Index");
+      }
     }
 }

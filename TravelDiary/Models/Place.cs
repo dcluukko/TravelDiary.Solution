@@ -8,16 +8,22 @@ namespace TravelDiary.Models
     public string Name { get; set; }
     public string Date { get; set; } 
 
+    public static int _currentId = 0;
     public int Id { get; }
 
     private static List<Place> _newPlace = new List<Place> { }; 
     public Place(string description, string name, string date)
     {
+      incrementId();
       Description = description;
       Name = name;
       Date = date;
       _newPlace.Add(this);
-      Id= _newPlace.Count;
+      Id= _currentId;
+    }
+    public static void incrementId()
+    {
+      _currentId++;
     }
 
     public static List<Place> GetPlace()
@@ -25,11 +31,33 @@ namespace TravelDiary.Models
       return _newPlace;
     }
 
-    public static Place Find(int searchId)
+    public static Place Find(int id)
     {
-      return _newPlace[searchId-1];
+      for (int i = 0; i < _newPlace.Count; i++)
+      {
+        if (_newPlace[i] is Place)
+        {
+          if(_newPlace[i].Id == id)
+          {
+            return _newPlace[i];
+          }
+        }        
+      }
+      return null;
     }
 
-    // public static 
+    public static void Delete(int id)
+    {
+      for (int i = 0; i < _newPlace.Count; i++)
+      {
+        if (_newPlace[i] is Place)
+        {
+          if(_newPlace[i].Id == id)
+          {
+            _newPlace.RemoveAt(i);
+          }
+        }        
+      }
+    }
   }
 }

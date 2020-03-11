@@ -1,0 +1,16 @@
+body {
+  background-color: #ddd;
+}
+
+#nav {
+  margin: 0 15em;
+}
+
+.card {
+  margin: 1em;
+}
+
+#header {
+  text-align: center;
+  margin: 2em 0 0 0;
+}
